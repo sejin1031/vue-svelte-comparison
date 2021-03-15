@@ -1,2 +1,12 @@
 /vue/node_modules/
 /vue/compare-vue/node_modules/
+
+/svelte/template/node_modules/
+/svelte/template/public/build/
+
+/svelte/template/.DS_Store
+
+/svelte/template/svelte-app/node_modules/
+/svelte/template/svelte-app/public/build/
+
+/svelte/template/svelte-app.DS_Store
