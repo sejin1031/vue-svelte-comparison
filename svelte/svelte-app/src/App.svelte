@@ -1,30 +1,28 @@
-<script>
-	export let name;
-</script>
-
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<div class="home">
+		<button on:click={renewal}>renewal data</button>
+		<div class="item-list-container">			
+			{#each itemList as item}
+			<Item {...item}></Item>
+			{/each}
+		</div>
+	</div>
 </main>
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+<script>
+	import Item from './Item.svelte'
+	let itemList = new Array(10000).fill(0).map((val,index) => {
+      return {
+        name: 'abc' + index,
+        number: 123 + '-' + index
+      }
+		});
+	function renewal () {
+		itemList = new Array(10000).fill(0).map((val,index) => {
+			return {
+				name: 'd' + index,
+				number: Math.random(3)* 100 + '-' + index
+			}
+		})
 	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+</script>

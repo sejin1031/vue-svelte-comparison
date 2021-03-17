@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <button @click="renewal">renewal data</button>
     <div class="item-list-container">
       <Item  v-for="i in itemList" :key="i.name" :info="i"></Item>
     </div>
@@ -33,10 +34,17 @@ export default {
   },
   mounted () {
     
+  },
+  methods: {
+    renewal () {
+      this.itemList = new Array(10000).fill(0).map((val,index) => {
+			return {
+				name: 'd' + index,
+				number: Math.random(3)* 100 + '-' + index
+			}
+		})
+    }
   }
 }
 </script>
 
-<style>
-.item-list-container { display: grid; width: 1200px; grid-column: 5; }
-</style>
