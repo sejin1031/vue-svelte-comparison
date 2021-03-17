@@ -8,8 +8,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: 'Home',
   components: {
@@ -27,9 +25,6 @@ export default {
         number: 123 + '-' + index
       }
     })
-  },
-  mounted () {
-    
   },
   methods: {
     renewal () {
