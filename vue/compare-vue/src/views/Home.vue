@@ -17,10 +17,6 @@ export default {
   },
   data () {
     return {
-      dt: {
-        name: 'abc',
-        number: 123
-      },
       itemList: []
     }
   },
