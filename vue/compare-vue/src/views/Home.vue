@@ -21,7 +21,7 @@ export default {
   beforeMount () {
     this.itemList = new Array(10000).fill(0).map((val,index) => {
       return {
-        name: 'abc' + index,
+        name: '11' + index,
         number: 123 + '-' + index
       }
     })
