@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <button @click="renewal">renewal data</button>
     <div class="item-list-container">
       <Item  v-for="i in itemList" :key="i.name" :info="i"></Item>
     </div>
+    <button @click="renewal">renewal data</button>
   </div>
 </template>
 
