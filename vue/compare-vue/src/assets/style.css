@@ -1,6 +1,6 @@
 .home { top: 80px }
-.home button { float: right; position:absolute }
-.item-list-container { top: 80px;left: 130px; display: flex; height: 600px;width: 70%; flex-direction: row; flex-wrap: wrap; overflow: scroll;position: relative;}
+.home button { float: right; position:absolute; top:100px; left: 130px}
+.item-list-container { top: 140px;left: 130px; display: flex; height: 600px;width: 70%; flex-direction: row; flex-wrap: wrap; overflow: scroll;position: relative;}
 .item-container{ width: 100px; height: 100px; position: relative; }
 .item-top { width: 70%; height: 70%; }
 .item-thumb { background-size: contain; height: 100%; background-image: url('./logo.png');}
