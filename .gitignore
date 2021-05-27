@@ -11,3 +11,4 @@
 /svelte/svelte-app/public/build/
 
 /svelte/svelte-app.DS_Store
+/socketio-with-express/node_modules/
